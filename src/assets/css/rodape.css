@@ -1,0 +1,29 @@
+.rodape{
+    background-color: #333;
+    border-top: 3px solid #00b7ab;
+    color: #fff;
+    padding-bottom: 30px;
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom:30px;
+}
+
+.rodape-title{
+    color: #fff;
+    font-size: 1.8em;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.rodape-content{
+    color: #fff;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.img-rodape{
+    text-align: center;
+    margin-top: 30px;
+}

@@ -4,8 +4,20 @@ body{
 
 .menu-content{
     background-color: #00b7ab;    
-    color: #fff;
-    font-size: 2.5em;
     padding: 20px;
     margin-top: 0px;
+    text-align: center;
+
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.title-content{
+    font-size: 2.3em;
+    color: #fff;        
+}
+
+.img{
+    float: left;
 }

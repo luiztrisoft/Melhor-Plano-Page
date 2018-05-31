@@ -1,6 +1,8 @@
 import React from 'react';
 import '../assets/css/menu.css';
 import '../assets/css/grid.css';
+import logo from '../assets/img/logo.png';
+
 export default class App extends React.Component{
 
     constructor(){
@@ -10,8 +12,11 @@ export default class App extends React.Component{
     }
 
     render(){
-        return (       
-            <h1 className="menu-content">Planos de internet, telefonia e canais de TV</h1>
+        return (   
+            <div className="menu-content ">    
+                <img className="img" src={logo} height="50" alt="Trisoft"/>
+                <label className="title-content">Planos de internet, telefonia e canais de TV</label>
+            </div>
         );
     }
 

@@ -1,7 +1,9 @@
 import React from 'react';
-import Menu from './Menu'
+import Menu from './Menu';
+import Rodape from './Rodape';
 import '../assets/css/app.css';
 import '../assets/css/grid.css';
+import icon from '../assets/img/icon.png';
 
 export default class App extends React.Component{
 
@@ -46,10 +48,8 @@ export default class App extends React.Component{
             <div>
             <Menu/>
             <div className="row">
-
-
-               <h1 className="column column-12">Lista de produtos</h1>                
-               <p>{this.state.produtos.length} PLANOS</p>  
+               <p className="column column-12 choose">Escolha o melhor plano que se adequa as suas necessidades</p>                
+               {/* <p>{this.state.produtos.length} PLANOS</p>   */}
              </div>  
                {
                    this.state.produtos.map(function(produto, index){                                     
@@ -69,8 +69,9 @@ export default class App extends React.Component{
                         <p className="pacote-incluso">Pacotes inclusos</p>
                             {produto.pacote.map(function(pacote, index){                                
                                 return (
-                                    <div>                                   
-                                        <label>{pacote.Name}</label>
+                                    <div> 
+                                        <img src={icon} alt=""/>                                         
+                                        <label className="included-bundle">{pacote.Name}</label> 
                                     </div> 
                                 )}
                             )}
@@ -79,6 +80,7 @@ export default class App extends React.Component{
                    );
                 })
             }
+            <Rodape/>
             </div>                  
         )
     }

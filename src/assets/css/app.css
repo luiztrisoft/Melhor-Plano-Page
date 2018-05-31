@@ -1,7 +1,13 @@
 .title{
     color: #00b7ab;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 1.3em;
+}
+
+.choose{
+    margin-top: 50px;
+    font-family: Roboto,sans-serif;
+    font-size: 1.9em;
 }
 
 .plan{
@@ -12,6 +18,7 @@
     padding: 25px;
     min-height: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
 .body-price{
@@ -33,4 +40,9 @@
 
 .text-left{
     text-align: left;
+}
+
+.included-bundle{
+    vertical-align: top;
+    margin-left: 4px;
 }
