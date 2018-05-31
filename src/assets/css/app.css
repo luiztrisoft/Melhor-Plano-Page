@@ -1,0 +1,36 @@
+.title{
+    color: #00b7ab;
+    font-family: Roboto,sans-serif;
+    font-size: 1.3em;
+}
+
+.plan{
+    border: 1px solid rgba(0, 183, 171, 0.2);
+    border-left: 13px solid #00b7ab;
+    border-radius: 3px;
+    color: #777;
+    padding: 25px;
+    min-height: 30px;
+    text-align: center;
+}
+
+.body-price{
+    background-color: #00b7ab;
+    border-radius: 100px;
+    padding: 15px;
+    color: #fff;
+}
+.price{
+    font-size: 2.7em;
+}
+
+.pacote-incluso{
+    color: #00b7ab;
+    font-size: 1.2em;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-weight: bold;
+}
+
+.text-left{
+    text-align: left;
+}

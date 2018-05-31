@@ -1,5 +1,7 @@
 import React from 'react';
-import '../assets/css/App.css';
+import Menu from './Menu'
+import '../assets/css/app.css';
+import '../assets/css/grid.css';
 
 export default class App extends React.Component{
 
@@ -41,29 +43,43 @@ export default class App extends React.Component{
     
     render(){
         return (
-            <div className="color">
-               <h1>Lista de produtos</h1>                
-               <strong>{this.state.produtos.length} PLANOS</strong>  
+            <div>
+            <Menu/>
+            <div className="row">
+
+
+               <h1 className="column column-12">Lista de produtos</h1>                
+               <p>{this.state.produtos.length} PLANOS</p>  
+             </div>  
                {
                    this.state.produtos.map(function(produto, index){                                     
                        return(
-                           <div >
-                            <h2 className="title">{produto.nome}</h2>                                                                         
-                            
+                        <div className="row plan">         
+                        <div className="column column-6">
+                            <h2 className="title">{produto.descricao}</h2>                                                                         
+                        </div>
+                        <div className="column column-2">                        
+                            <div className="body-price">
+                            R$ <span className="price">{produto.total}</span>,00
+                            </div>
+                               
+                        </div>                         
+                        <div className="column column-2"></div>                       
+                        <div className="column column-2 text-left">                        
+                        <p className="pacote-incluso">Pacotes inclusos</p>
                             {produto.pacote.map(function(pacote, index){                                
                                 return (
-                                    <div>
-                                    {/* <h2>{this.somar(produto.pacote)}</h2> */}
-                                        <p>{pacote.Name} - {pacote.Price},00</p>                                                                                
+                                    <div>                                   
+                                        <label>{pacote.Name}</label>
                                     </div> 
                                 )}
                             )}
-                            R$ <span style={{fontSize:'2.3em'}}>{produto.total}</span>,00                       
                         </div>                        
-                    );
+                        </div>
+                   );
                 })
-                }
-            </div>
+            }
+            </div>                  
         )
     }
 }
