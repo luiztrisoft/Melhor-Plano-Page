@@ -9,14 +9,12 @@ export default class App extends React.Component{
 
     constructor(){
         super();
-        // this.state = {};
         this.state = {
             produtos:[]
         };
     }
     
     componentWillMount(){
-        // Called the first time the component is loaded right before the component is added to the page
         this.search();
     }
 
@@ -33,7 +31,7 @@ export default class App extends React.Component{
         })
     }
 
-    somar(pacote){
+     somar (pacote){
         var valor = 0;
         for (let index = 0; index < pacote.length; index++) {
             valor = valor + pacote[index].Price;
@@ -41,28 +39,25 @@ export default class App extends React.Component{
         return valor
     }
 
-    // m(){console.log('Mark I') }
-    
     render(){
         return (
             <div>
             <Menu/>
             <div className="row">
-               <p className="column column-12 choose">Escolha o melhor plano que se adequa as suas necessidades</p>                
-               {/* <p>{this.state.produtos.length} PLANOS</p>   */}
+               <p className="column column-12 choose">Escolha o melhor plano que se adequa as suas necessidades</p>
              </div>  
                {
-                   this.state.produtos.map(function(produto, index){                                     
-                       return(
+                   this.state.produtos.map(function(produto, index){                            
+
+                        return(
                         <div className="row plan">         
                         <div className="column column-6">
-                            <h2 className="title">{produto.descricao}</h2>                                                                         
+                            <h2 className="title">{produto.descricao} {index + 1}</h2>                                                                         
                         </div>
                         <div className="column column-2">                        
                             <div className="body-price">
                             R$ <span className="price">{produto.total}</span>,00
-                            </div>
-                               
+                            </div>                              
                         </div>                         
                         <div className="column column-2"></div>                       
                         <div className="column column-2 text-left">                        
@@ -71,7 +66,7 @@ export default class App extends React.Component{
                                 return (
                                     <div> 
                                         <img src={icon} alt=""/>                                         
-                                        <label className="included-bundle">{pacote.Name}</label> 
+                                        <label className="included-bundle">{pacote.name}</label> 
                                     </div> 
                                 )}
                             )}
