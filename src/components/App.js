@@ -30,15 +30,7 @@ export default class App extends React.Component{
             console.log(error)
         })
     }
-
-     somar (pacote){
-        var valor = 0;
-        for (let index = 0; index < pacote.length; index++) {
-            valor = valor + pacote[index].Price;
-        }
-        return valor
-    }
-
+     
     render(){
         return (
             <div>
@@ -52,7 +44,7 @@ export default class App extends React.Component{
                         return(
                         <div className="row plan">         
                         <div className="column column-6">
-                            <h2 className="title">{produto.descricao} {index + 1}</h2>                                                                         
+                            <h2 className="title">{produto.descricao}</h2>                                                                         
                         </div>
                         <div className="column column-2">                        
                             <div className="body-price">
