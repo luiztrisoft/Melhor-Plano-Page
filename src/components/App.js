@@ -44,7 +44,7 @@ export default class App extends React.Component{
                         return(
                         <div className="row plan">         
                         <div className="column column-6">
-                            <h2 className="title">{produto.descricao}</h2>                                                                         
+                            <h2 className="title">{produto.descricao} {index + 1}</h2>                                                                         
                         </div>
                         <div className="column column-2">                        
                             <div className="body-price">
