@@ -4,6 +4,7 @@ import Rodape from './Rodape';
 import '../assets/css/app.css';
 import '../assets/css/grid.css';
 import icon from '../assets/img/icon.png';
+import plan from '../assets/img/plan.png';
 
 export default class App extends React.Component{
 
@@ -43,26 +44,31 @@ export default class App extends React.Component{
 
                         return(
                         <div className="row plan">         
-                        <div className="column column-6">
+                        <div className="column column-3">
+                            <img src={plan} width='90' alt=""/> 
                             <h2 className="title">{produto.descricao} {index + 1}</h2>                                                                         
                         </div>
-                        <div className="column column-2">                        
+                        <div className="column column-4">                        
                             <div className="body-price">
                             R$ <span className="price">{produto.total}</span>,00
+                            <br/>
+                            <span className="mensalidade">por mês</span>
                             </div>                              
-                        </div>                         
-                        <div className="column column-2"></div>                       
-                        <div className="column column-2 text-left">                        
-                        <p className="pacote-incluso">Pacotes inclusos</p>
+                        </div>                                                 
+                        <div className="column column-3 text-left">                        
+                        <p className="pacote-incluso">PACOTES INCLUSOS</p>
                             {produto.pacote.map(function(pacote, index){                                
                                 return (
                                     <div> 
-                                        <img src={icon} alt=""/>                                         
+                                        <img src={icon} width='20' alt=""/>                                         
                                         <label className="included-bundle">{pacote.name}</label> 
                                     </div> 
                                 )}
                             )}
                         </div>                        
+                        <div className="column column-2">
+                            <button className="btn">Quero este</button>
+                        </div>                       
                         </div>
                    );
                 })
