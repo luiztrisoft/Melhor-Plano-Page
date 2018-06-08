@@ -15,7 +15,7 @@ export default class App extends React.Component{
         return (   
             <div className="menu-content ">    
                 <img className="img" src={logo} height="50" alt="Trisoft"/>
-                <label className="title-content">PLANOS DE INTERNET, TELEFONIA, E CANAIS DE TV
+                <label className="title-content">PLANOS DE INTERNET, TELEFONIA E CANAIS DE TV
                 </label>
             </div>
         );

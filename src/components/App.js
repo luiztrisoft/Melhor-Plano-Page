@@ -5,6 +5,7 @@ import '../assets/css/app.css';
 import '../assets/css/grid.css';
 import icon from '../assets/img/icon.png';
 import plan from '../assets/img/plan.png';
+import user from '../assets/img/user.png';
 
 export default class App extends React.Component{
 
@@ -37,7 +38,8 @@ export default class App extends React.Component{
             <div>
             <Menu/>
             <div className="row">
-               <p className="column column-12 choose">Escolha o melhor plano que se adequa as suas necessidades</p>
+               <p  className="column column-10 choose">Escolha o melhor plano que se adequa as suas necessidades</p>
+               <img  className="column column-2 mascote" src={user} alt='Planos'/>
              </div>  
                {
                    this.state.produtos.map(function(produto, index){                            
