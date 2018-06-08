@@ -4,7 +4,6 @@ import Rodape from './Rodape';
 import '../assets/css/app.css';
 import '../assets/css/grid.css';
 import icon from '../assets/img/icon.png';
-import plan from '../assets/img/plan.png';
 import user from '../assets/img/user.png';
 
 export default class App extends React.Component{
@@ -47,7 +46,6 @@ export default class App extends React.Component{
                         return(
                         <div className="row plan">         
                         <div className="column column-3">
-                            <img src={plan} alt="Plano"/> 
                             <h2 className="title">{produto.descricao} {index + 1}</h2>                                                                         
                         </div>
                         <div className="column column-4">                        
@@ -57,19 +55,19 @@ export default class App extends React.Component{
                             <span className="mensalidade">por mês</span>
                             </div>                              
                         </div>                                                 
-                        <div className="column column-3 text-left">                        
+                        <div className="column column-3 text-align">                        
                         <p className="pacote-incluso">PACOTES INCLUSOS</p>
                             {produto.pacote.map(function(pacote, index){                                
                                 return (
                                     <div> 
-                                        <img src={icon} width='20' alt=""/>                                         
+                                        <img src={icon} className='icon' alt=""/>                                         
                                         <label className="included-bundle">{pacote.name}</label> 
                                     </div> 
                                 )}
                             )}
                         </div>                        
                         <div className="column column-2">
-                            <button className="btn">Quero este</button>
+                            <button className="btn">QUERO ESTE</button>
                         </div>                       
                         </div>
                    );

@@ -1,13 +1,13 @@
 .title{
     color: #00b7ab;
-    /* font-family: Roboto, sans-serif; */
-    font-family:  "Lucida Console", monospace, sans-serif;
-    font-size: 1.6em;
+    font-family:  "Trebuchet MS", Arial, sans-serif;
+    font-size: 1.4em;
+    margin: 10%
 }
 
 .choose{
     margin-top: 50px;
-    font-family: Roboto,sans-serif;
+    font-family: Verdana, Geneva, Tahoma, Helvetica, sans-serif;
     font-size: 1.9em;
 }
 
@@ -25,7 +25,7 @@
 
 .body-price{
     border-radius: 100px;
-    padding: 15px;
+    padding: 5px;
     color: #00b7ab;
     font-family: "Trebuchet MS", Arial, sans-serif;
 	font-weight: bold;
@@ -46,7 +46,7 @@
 	font-weight: bold;
 }
 
-.text-left{
+.text-align{
     text-align: left;
 }
 
@@ -60,12 +60,12 @@
     border:solid 1px #00b7ab;
     color: #fff;
     font-size: 1em;
-	font-family: Arial, sans-serif;
-    font-weight: bold;
-    padding: 20px 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 20px;
     border-radius: 3px;
     cursor: pointer;
     margin-top: 25px;
+    width: 100%;
 }
 
 .btn:hover{
@@ -73,12 +73,12 @@
     border:solid 1px #00b7ab;
     color: #00b7ab;
     font-size: 1em;
-	font-family: Arial, sans-serif;
-    font-weight: bold;
-    padding: 20px 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 20px;
     border-radius: 3px;
     cursor: pointer;
     margin-top: 25px;
+    width: 100%;
 }
 
 .btn:focus{
@@ -86,12 +86,12 @@
     border:solid 1px #00766e;
     color: #fff;
     font-size: 1em;
-	font-family: Arial, sans-serif;
-    font-weight: bold;
-    padding: 20px 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 20px;
     border-radius: 3px;
     cursor: pointer;
     margin-top: 25px;
+    width: 100%;
 }
 
 .mascote{
@@ -99,6 +99,10 @@
     margin-bottom: -10px;
     padding-bottom: 0px;
     float: right;
+}
+
+.icon{
+    width: 15px;
 }
 
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
@@ -110,6 +114,21 @@
     
     .mascote{
         display: none;
+    }
+
+    .text-align{
+        text-align: center;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .title{
+        margin: 0;
+        padding-bottom: 10px;
+        font-size: 1.6em;
+        border-bottom: solid 1px rgba(0, 183, 171, 0.3);
     }
 }
 
