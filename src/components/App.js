@@ -45,7 +45,7 @@ export default class App extends React.Component{
                         return(
                         <div className="row plan">         
                         <div className="column column-3">
-                            <img src={plan} width='90' alt=""/> 
+                            <img src={plan} alt="Plano"/> 
                             <h2 className="title">{produto.descricao} {index + 1}</h2>                                                                         
                         </div>
                         <div className="column column-4">                        

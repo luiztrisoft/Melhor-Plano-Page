@@ -21,6 +21,7 @@
     color: #fff;
     text-align: left;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .img-rodape{
@@ -31,4 +32,15 @@
 a{
     text-decoration: none;
     color: #fff;
+    margin: 15px; 
+}
+
+.central{
+    text-align: center
+}
+
+.social-network{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
 }

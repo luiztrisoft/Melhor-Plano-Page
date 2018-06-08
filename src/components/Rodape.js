@@ -42,31 +42,16 @@ export default class App extends React.Component {
                     <p className="rodape-content">Monte um combo para sua casa</p>
                 </div>
                 <div className="row">
-                    <div className="column column-9 img-rodape">
+                    <div className="column column-12 img-rodape">
                         <img src={trisoft} alt="Trisoft" />
-                        <p>luiz.trisoft@gmail.com</p> 
+                        <p>luiz.trisoft@gmail.com</p>
                     </div>
+                </div>
 
-                    <div className="row">
-                        <div className="column column-1 img-rodape">
-                            <a href="https://www.facebook.com/luiz.alberto.3954546">
-                                <img src={facebook} alt="facebook" /> 
-                                <p>FACEBOOK</p>
-                            </a>
-                        </div>
-                        <div className="column column-1 img-rodape">
-                            <a href="https://www.youtube.com/c/LuizAlbertoTiko">
-                                <img src={youtube} alt="youtube" />
-                                <p>YOUTUBE</p>
-                            </a>
-                        </div>
-                        <div className="column column-1 img-rodape">
-                            <a href="https://www.linkedin.com/in/luiz-alberto/">
-                                <img src={linkedin} alt="linkedin" />
-                                <p>LINKEDIN</p>
-                            </a>
-                        </div>
-                    </div>
+                <div className='central'>
+                    <a href="https://www.facebook.com/luiz.alberto.3954546"><img src={facebook} alt="facebook" /></a>
+                    <a href="https://www.youtube.com/c/LuizAlbertoTiko"><img src={youtube} alt="youtube" /></a>
+                    <a href="https://www.linkedin.com/in/luiz-alberto/"><img src={linkedin} alt="facebook" /></a>
                 </div>
             </div>
         );
