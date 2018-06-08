@@ -7,8 +7,8 @@
 
 .choose{
     margin-top: 50px;
-    font-family: Verdana, Geneva, Tahoma, Helvetica, sans-serif;
-    font-size: 1.9em;
+    color: #00b7ab;
+    font-size: 1.3em;
 }
 
 .plan{
@@ -109,7 +109,7 @@
 
     .choose{
         margin-top: 10px;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
     .mascote{

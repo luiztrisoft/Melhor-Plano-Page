@@ -37,7 +37,8 @@ export default class App extends React.Component{
             <div>
             <Menu/>
             <div className="row">
-               <p  className="column column-10 choose">Escolha o melhor plano que se adequa as suas necessidades</p>
+               {/* <p  className="column column-10 choose">Escolha o plano que melhor se adequa as suas necessidades</p> */}
+               <p  className="column column-10 choose">ESCOLHA O PLANO QUE MELHOR SE ADEQUA AS SUAS NECESSIDADES</p>
                <img  className="column column-2 mascote" src={user} alt='Planos'/>
              </div>  
                {
